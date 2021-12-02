@@ -12,5 +12,5 @@ databases:
         location: /appz/data/tb2
     schemas:
       - name: sonarqubeschema
-        authorised_user: sonaruser
+        authorised_user: sonaradmin
         search_path: true
