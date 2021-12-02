@@ -11,7 +11,7 @@ build:
     image_template: postgres_master-13.3
     
 deploy:
-    context: alpha/DEV
+    context: francisjoy/DEV
     type: statefulset
     replicas: 1
     port:
@@ -31,14 +31,14 @@ properties:
     POSTGRESQL_CONNECTIONDB: postgres
     POSTGRESQL_PORT: 5432
     POSTGRESQL_PASSWORD: 
-      vault: POSTGRESQL_PASSWORD
+      vault: $POSTGRESQL_PASSWORD
     POSTGRESQL_SYNCHRONOUS_COMMIT_MODE: on
     POSTGRESQL_NUM_SYNCHRONOUS_REPLICAS: 1
     POSTGRESQL_REP_USER: replica
     PGPASSWORD: 
-      vault: PGPASSWORD
+      vault: $PGPASSWORD
     SONARUSER_PASSWORD:
-      vault: SONARUSER_PASSWORD
-    APPZ_RESTORE_TOKEN: 20210115-1015
-    APPZ_LOAD_TOKEN: 20210115-1015
+      vault: $SONARUSER_PASSWORD
+    APPZ_RESTORE_TOKEN: 20211202-0745
+    APPZ_LOAD_TOKEN: 20211202-0745
     revision : 56
