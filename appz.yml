@@ -1,7 +1,7 @@
 app:
     name: Postgres Sonarqube
     code: POSTGRESSONARQUBE
-    notify: appzdev@cloudbourne.co
+    notify: fjoy@ecloudcontrol.com
     
 build:
     version: 13.3
