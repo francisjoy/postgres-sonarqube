@@ -1,7 +1,7 @@
 ---
 users:
   - name: sonaradmin
-    password: $SONARUSER_PASSWORD
+    password: $SONAR_JDBC_PASSWORD
     role: createdb, createrole
     
 databases:
